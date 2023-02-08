@@ -7,6 +7,8 @@ export const getServerSideProps = ({ query }) => ({
   props: query,
 })
 
+
+
 export default function Home({ country }) {
   return (
     <div className={styles.container}>

@@ -3,8 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import countries from '../lib/countries'
 
-export const getServerSideProps = ({ query }) => ({
-  props: query,
+export const getServerSideProps = ({ res, query }) => ({
+  res.setHeader('cache-control', 'public, immutable, max-age=86400, s-maxage=86400')
+return{
+  props: query
+}
 })
 
 

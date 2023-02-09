@@ -6,7 +6,7 @@ import countries from '../lib/countries'
 export async function getServerSideProps(context) {
   context.res.setHeader('cache-control', 'custom')
   return {
-    props: {}
+    props: context.query
   }
 }
 

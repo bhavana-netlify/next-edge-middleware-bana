@@ -8,7 +8,6 @@ export const getServerSideProps = ({ res, query }) => ({
   return {
     props: {}
   }
-}
 })
 
 

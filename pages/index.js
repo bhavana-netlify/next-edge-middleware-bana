@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import countries from '../lib/countries'
 
 export const getServerSideProps = ({ res, query }) => {
-context.res.setHeader('cache-control', 'public, immutable, max-age=86400, s-maxage=86400')
+res.setHeader('cache-control', 'public, immutable, max-age=86400, s-maxage=86400')
 return {
   props: query
 }

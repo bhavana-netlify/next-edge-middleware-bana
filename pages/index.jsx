@@ -3,9 +3,12 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import countries from '../lib/countries'
 
-export const getServerSideProps = ({ query }) => ({
-  props: query,
-})
+export async function getServerSideProps(context) {
+  context.res.setHeader('cache-control', 'custom')
+  return {
+    props: context.query
+  }
+}
 
 
 

@@ -5,9 +5,7 @@ import countries from '../lib/countries'
 
 export const getServerSideProps = ({ res, query }) => ({
   res.setHeader('cache-control', 'public, immutable, max-age=86400, s-maxage=86400')
-  return {
-    props: {}
-  }
+  props: query
 })
 
 

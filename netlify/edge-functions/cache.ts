@@ -6,4 +6,4 @@ export default async (Context) => {
   return response;
 }
 
-export const config = { path: "/test" }
+export const config = { path: "/" }

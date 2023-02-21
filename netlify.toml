@@ -1,5 +1,5 @@
 [build]
-command = "next build && echo $MY_IMPORTANT_VARIABLE"
+command = "env ; next build"
 base = "."
 publish = ".next"
 
